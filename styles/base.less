@@ -3,14 +3,16 @@
 atom-text-editor, :host {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
-
+    .gutter-container{
+     border-left: 3px solid rgba(0,0,0,0.1);
+    }
     .gutter {
-        background-color: @syntax-gutter-background-color;
+        background-color: rgba(0,0,0,0.01);
         color: @syntax-gutter-text-color;
 
         .line-number {
             &.cursor-line {
-                background-color: @syntax-gutter-background-color-selected;
+                background-color: transparent;//@syntax-gutter-background-color-selected;
                 color: @syntax-gutter-text-color-selected;
             }
             &.cursor-line-no-selection {
